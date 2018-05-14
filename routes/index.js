@@ -3,10 +3,10 @@ import todos from '../server/controllers/todoController';
 
 const router = express.Router();
 
-router.post('/api/v1/todo/create', todos.create);
-router.get('/api/v1/todos', todos.findAll);
-router.get('/api/v1/todo/:todoId', todos.findOne);
-router.put('/api/v1/todo/:todoId', todos.modify);
-router.delete('/api/v1/todo/:todoId', todos.destroy);
+router.post('/todo/create', todos.create);
+router.get('/todos', todos.findAll);
+router.get('/todo/:todoId', todos.findOne);
+router.put('/todo/:todoId', todos.modify);
+router.delete('/todo/:todoId', todos.destroy);
 
 export default router;

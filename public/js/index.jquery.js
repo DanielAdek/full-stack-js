@@ -3,7 +3,7 @@ $('.btn').click((e) => {
     $.ajax({
         method: 'GET',
         dataType: 'json',
-        url: 'https://baconipsum.com/api/?type=meat-and-filler'
+        url: 'https://full-stack-js.herokuapp.com/api/v1/todos'
     })
     .done(addTodo)
     .fail(error)
